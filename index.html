@@ -1,0 +1,65 @@
+<!doctype html>
+<html lang="sv">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <meta name="theme-color" content="#0d0f0e">
+  <meta name="robots" content="noindex,nofollow">
+  <title>ITSAI | Skapa med AI</title>
+  <link rel="icon" href="data:,">
+  
+  <link rel="stylesheet" href="click2sms.css">
+  <script src="flow.js" defer></script>
+  <script src="click2sms.js" defer></script>
+</head>
+<body class="writer-page" data-flow-page="writer">
+<main class="writer">
+  <div class="writer-top">
+    <div class="space-art" role="img" aria-label="Ett mörkt rymdlandskap med färgstarka planeter" data-art>
+      <a class="space-home" href="index.html" aria-label="ITSAI – startsida" data-home></a>
+    </div>
+    <section class="composer-pane" aria-labelledby="greeting">
+      <h1 id="greeting" data-i18n="hello">Hej,</h1>
+      <div class="language-row">
+        <label for="language" data-i18n="selectLanguage">Välj språk</label>
+        <div class="language-control">
+          <span class="flag flag--sv" aria-hidden="true" data-flag></span>
+          <select id="language" data-language-select>
+            <option value="sv" lang="sv">Svenska</option>
+            <option value="en" lang="en">English</option>
+          </select>
+          <span class="select-caret" aria-hidden="true"></span>
+        </div>
+      </div>
+      <p class="writer-prompt" id="topic-prompt" data-i18n="prompt">Skriv en kort text för att direkt skapa professionellt AI-genererat innehåll.</p>
+      <form class="topic-form" id="topic-form" action="subscribe.html" method="get" novalidate>
+        <input id="topic" type="text" autocomplete="off" aria-label="Ange ditt ämne" aria-describedby="topic-prompt topic-info">
+        <button class="arrow-button" type="submit" aria-label="Fortsätt" data-arrow><svg viewBox="0 0 32 32" aria-hidden="true"><path d="M6 16h20M17 7l9 9-9 9"/></svg></button>
+      </form>
+      <div class="topic-info" id="topic-info">
+        <span class="info-symbol" aria-hidden="true">i</span>
+        <p data-i18n="topicInfo">Ange ditt ämne och se hur AI:n skapar ett komplett dokument om det.</p>
+      </div>
+    </section>
+  </div>
+  <section class="beginner-section" aria-labelledby="beginner-title">
+    <div class="or-divider" aria-hidden="true"><span data-i18n="or">eller</span></div>
+    <h2 id="beginner-title" data-i18n="beginnerTitle">Osäker på hur du ska börja?</h2>
+    <p class="beginner-intro" data-i18n="beginnerIntro">Här är några tips för nybörjare. Du kan också utforska våra guider under ”Mitt konto”.</p>
+    <div class="tips">
+      <article class="tip-card"><span class="tip-icon"><svg viewBox="0 0 48 48" aria-hidden="true"><circle cx="21" cy="21" r="13"/><path d="m31 30 8 9M21 27s-8-4.4-8-9a4.5 4.5 0 0 1 8-2.7A4.5 4.5 0 0 1 29 18c0 4.6-8 9-8 9Z"/></svg></span><p data-i18n="tipClear">Var tydlig och kortfattad: Ju mer specifik du är med vad du vill göra, desto bättre resultat får du.</p></article>
+      <article class="tip-card"><span class="tip-icon"><svg viewBox="0 0 48 48" aria-hidden="true"><circle cx="21" cy="21" r="13"/><path d="m31 30 8 9M21 15v12M15 21h12"/></svg></span><p data-i18n="tipContext">Ge sammanhang: Relevant bakgrundsinformation kan hjälpa AI:n att förstå vad du söker och ge mer träffsäkra svar.</p></article>
+      <article class="tip-card"><span class="tip-icon"><svg viewBox="0 0 48 48" aria-hidden="true"><path d="m28 9 11 11M25 12l11 11M29 16 13 32a6 6 0 0 0 8 8l16-16M17 28l9 9M13 32l4-4"/></svg></span><p data-i18n="tipExperiment">Experimentera: Var inte rädd för att prova olika typer av instruktioner och se vad som fungerar bäst för just ditt användningsområde.</p></article>
+    </div>
+  </section>
+  
+<footer class="flow-footer">
+  <nav aria-label="Juridisk information" data-footer-nav>
+    <a href="../terms.html?from=writer&amp;lang=sv" data-legal="terms.html" data-i18n="terms">Villkor &amp; Betingelser</a>
+    <a href="../privacy.html?from=writer&amp;lang=sv" data-legal="privacy.html" data-i18n="privacy">Integritetspolicy</a>
+  </nav>
+</footer>
+  <noscript><p class="flow-noscript">Du kan fortsätta till <a href="subscribe.html">SMS-sidan</a>. / Continue to the <a href="subscribe.html?lang=en">SMS page</a>.</p></noscript>
+</main>
+</body>
+</html>

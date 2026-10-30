@@ -1,0 +1,59 @@
+/* Exact ItsAI Click2SMS card palette from Frame 1.png (360 x 261). */
+.sms-page[data-service="itsai"] .sms-card {
+  background:#595959;
+  color:#eeeeee;
+  border:1px solid #d9d9d9;
+  border-radius:18px;
+  padding:46px 11px 34px;
+  box-shadow:none;
+}
+.sms-page[data-service="itsai"] .sms-instruction {
+  margin:0;
+  color:#eeeeee;
+  font-size:20px;
+  line-height:24px;
+  font-weight:400;
+}
+.sms-page[data-service="itsai"] .sms-destination {
+  margin:12px 0 28px;
+  color:#a6ff7e;
+  font-size:28px;
+  line-height:34px;
+  font-weight:400;
+}
+.sms-page[data-service="itsai"] .destination-to { color:#eeeeee; }
+.sms-page[data-service="itsai"] .sms-button {
+  display:flex;
+  align-items:center;
+  justify-content:center;
+  width:100%;
+  min-height:56px;
+  margin:0;
+  padding:12px;
+  border:0;
+  border-radius:6px;
+  background:#a6ff7e;
+  color:#000000;
+  font-size:20px;
+  line-height:26px;
+  font-weight:700;
+  text-align:center;
+  text-decoration:none;
+  opacity:1;
+  box-shadow:none;
+  animation:sms-card-attention 1.65s ease-in-out infinite;
+}
+.sms-page[data-service="itsai"] .sms-card .price {
+  margin:11px 0 0;
+  color:#dddddd;
+  font-size:11px;
+  line-height:14px;
+  font-weight:400;
+}
+@keyframes sms-card-attention { 0%,100% { filter:brightness(1); } 50% { filter:brightness(.85); } }
+.sms-page[data-service="itsai"] .sms-button:hover,
+.sms-page[data-service="itsai"] .sms-button:focus-visible { animation:none; filter:brightness(1); }
+@media(min-width:900px) {
+  .sms-page[data-service="itsai"] .sms-card { margin:0; padding:46px 11px 34px; }
+}
+@media(prefers-reduced-motion:reduce) { .sms-page[data-service="itsai"] .sms-button { animation:none; } }
