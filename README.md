@@ -1,29 +1,29 @@
-# ITSAI Click2SMS — variante adicional
-Abrir index.html, o ../click2sms.html desde la carpeta principal.
+# ITSAI Click2SMS
+Esta carpeta es autónoma: se puede copiar o publicar entera sin la carpeta padre.
 
-Flujo:
-1. index.html: pantalla del tema con ilustración espacial y consejos.
-2. subscribe.html: pantalla de suscripción por SMS.
-3. El visitante pulsa Skicka SMS / Send SMS para abrir el compositor nativo: TSAI al 72300.
-El sitio no envía mensajes automáticamente y no simula una suscripción confirmada.
+## Abrir
+- index.html: landing de suscripción SMS (TSAI al 72300).
+- home.html: pantalla previa para escribir el tema; su flecha abre index.html.
+- subscribe.html: copia compatible de la landing SMS para conservar enlaces anteriores.
+- index.html?lang=en y home.html?lang=en: versiones inglesas.
+- terms.html y privacy.html: páginas legales en sueco, con vuelta al paso de origen.
 
-Idiomas: sueco por defecto; ?lang=en para inglés. El selector de la primera pantalla traduce la interfaz al idioma elegido.
-El precio visible y las condiciones compartidas mantienen la última instrucción: 200 SEK al mes, aunque las imágenes de referencia muestran 100 SEK.
-La palabra de alta es TSAI; la baja mostrada en este flujo es STOP ITSAI+, según el diseño Click2SMS.
-Se reutilizan los términos, privacidad, logo, robot y estilos comunes de la carpeta principal.
-El fondo espacial se muestra con CSS a partir de Home-1.jpg, sin modificar el original ni convertir los textos del diseño en una imagen de página completa.
-En desktop el CTA abre instrucciones para usar el móvil y permite copiar TSAI. La copia muestra éxito solo si el navegador confirma el acceso al portapapeles.
-En móviles se usa un URI sms: con cuerpo TSAI; iOS y otros dispositivos usan separadores distintos. La compatibilidad con cada app de mensajes debe verificarse en un dispositivo real.
+## Archivos
+CSS, scripts, logo, imagen del robot y páginas legales están dentro de esta misma carpeta.
+No hace falta copiar recursos desde la carpeta padre.
+Home-1.jpg contiene el arte espacial utilizado por home.html.
+Se conservan los diseños originales como referencias; los textos de la interfaz están en HTML.
 
-El tema se conserva solo en sessionStorage de la pestaña cuando el navegador lo permite; no se incluye en URL ni se envía a servidores.
-Esta versión no genera contenido con IA ni conecta la suscripción a un backend.
+## Comportamiento
+Precio: 200 SEK al mes.
+Tarjeta de ItsAI: gris #595959, verde #A6FF7E, texto del botón negro.
+En móvil, Skicka SMS / Send SMS abre el compositor con TSAI al 72300. El visitante revisa y envía el mensaje.
+En desktop aparecen instrucciones para continuar desde el móvil y un control para copiar TSAI.
+No se envían SMS automáticamente, no se genera contenido real con IA y no se simula una suscripción confirmada.
+El tema se conserva solo en sessionStorage de la pestaña si el navegador lo permite.
+Se conserva el selector SE/EN y el parpadeo suave del botón.
 
-Los documentos legales aceptan from=writer y from=c2s para regresar al paso correcto.
-La landing MSISDN/PIN principal conserva sus pantallas y el modo de prueba.
-Los archivos se han preparado localmente; no se ha creado ni actualizado un repositorio remoto.
-
-## Verificación
-82 comprobaciones de lógica, idiomas, navegación legal y destino SMS superadas entre ambos servicios con un DOM simulado. Enlaces, recursos e identificadores verificados. Sin prueba visual en navegador ni prueba en dispositivo real disponible.
-
-## Tarjeta SMS actualizada
-Estilos aislados en sms-card.css, cargados al final: fondo sólido, colores, espaciados y botón según Frame 1.png. Se mantiene 200 SEK al mes.
+## Comprobaciones
+82 comprobaciones de lógica, idiomas y navegación superadas entre ambos servicios con un DOM simulado.
+Todos los recursos locales resuelven dentro de cada carpeta Click2SMS; no hay dependencias ../.
+No hay una prueba visual de navegador ni de dispositivo real disponible.
